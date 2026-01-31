@@ -1,0 +1,43 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: block;
+}
+
+.navbarContainer{
+display: flex;
+width: 1440px;
+height: 98px;
+justify-content: space-between;
+align-items: center;
+padding-left: 96px;
+padding-right: 96px;
+    .languageButton{
+        background-image: url('/assets/Navbar/Property 1=Default.png');
+        cursor: pointer;
+        width: 84px;
+        height: 28px;
+        border-radius: 100px;
+        border: 1px;
+
+        &.en { background-image: url('/assets/Navbar/Property 1=Default.png');
+        &:hover { background-image: url('/assets/Navbar/Property 1=Default hover.png'); } }
+            &.de { background-image: url('/assets/Navbar/Property 1=Deutsch.png');
+             &:hover { background-image: url('/assets/Navbar/Property 1=Deutsch hover.png'); } }
+    }
+    .menu-left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2em;
+    }
+    .hrefTags{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+}
