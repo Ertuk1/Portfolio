@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './hero.scss',
 })
 export class HeroComponent {
+scrollToAnchor() {
+  document.getElementById('anchor3')?.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 
 }

@@ -11,4 +11,14 @@ import { HeroComponent } from '../sections/hero/hero';
 })
 export class App {
   protected readonly title = signal('portfolio');
+
+  onMouseMove(event: MouseEvent) {
+  const x = event.clientX;
+  const y = event.clientY
+
+  document.body.style.setProperty('--x', `${event.clientX}px`);
+  document.body.style.setProperty('--y', `${event.clientY}px`);
+  
+}
+
 }

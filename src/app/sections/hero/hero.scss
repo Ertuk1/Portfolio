@@ -1,6 +1,7 @@
 .hero {
   width: 100%;
   height: 100vh;
+  background-image: url('/assets/Hero/HeroBackground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,6 +10,146 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  z-index: -999;
+  z-index: 0;
   position: relative;
 }
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 755px;
+  height: 268px;
+  gap: 12px;
+
+  h1{
+    font-family: 'Fira code' monospace;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    font-weight: 400;
+  }
+
+  h2{
+    font-family: 'Karla' sans-serif;
+    color: white;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    font-size: 96px;
+    gap:12px;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 172px;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+  z-index: 10;
+
+    &:hover {
+    background: #3DCFB6;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+}
+
+.wippe-wrapper {
+  width: 100vw;
+  overflow: visible; /* wichtig, damit nichts rausguckt */
+  margin-top: 80px; /* oder wo du es haben willst */
+}
+
+.wippe-bar {
+  width: 110vw; /* etwas breiter, damit die Schräge nicht abschneidet */
+  padding: 12px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5.3px);
+  transform: rotate(-3deg);
+  transform-origin: center;
+  margin-left: -5vw; /* zentriert trotz Rotation */
+  border-radius: 12px;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  span {
+  display: inline-block;
+  padding-left: 100%;
+}
+}
+
+.marquee-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  white-space: nowrap;
+  transform-origin: center;
+  animation: marquee 12s linear infinite;
+}
+
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+
+.radio {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #3DCFB6;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+
+
+.marquee-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #3DCFB6;
+  display: block;
+}
+
+.marquee-rotated {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: px;
+  transform-origin: center;
+}
+
+
+
+
+@keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+
+

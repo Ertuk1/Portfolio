@@ -9,7 +9,9 @@
 
 .navbarContainer{
 display: flex;
-width: 1440px;
+width: 100%;
+margin: auto;
+max-width: 1440px;
 height: 98px;
 justify-content: space-between;
 align-items: center;
@@ -21,13 +23,23 @@ padding-right: 96px;
         width: 84px;
         height: 28px;
         border-radius: 100px;
-        border: 1px;
+        border: 1px solid transparent;
 
         &.en { background-image: url('/assets/Navbar/Property 1=Default.png');
         &:hover { background-image: url('/assets/Navbar/Property 1=Default hover.png'); } }
             &.de { background-image: url('/assets/Navbar/Property 1=Deutsch.png');
              &:hover { background-image: url('/assets/Navbar/Property 1=Deutsch hover.png'); } }
     }
+
+.menu-right {
+  background-image: url('/assets/Navbar/ekLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+}
+
     .menu-left{
         display: flex;
         justify-content: flex-start;
@@ -35,9 +47,43 @@ padding-right: 96px;
         gap: 2em;
     }
     .hrefTags{
+        font-family: 'Fira code', monospace;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 2%;
+        line-height: 100%;
+        color: #FFFFFF;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: color 0.2s ease;
+        cursor: pointer;
+        height: 26px;
+        width: 301px;
+        p {
+            position: relative;
+            padding-bottom: 6px;
+            transition: color 0.2s ease;
+            &::after{
+                content:"";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 8px;
+                height: 8px;
+                background: #3DCFB6;
+                border-radius: 50%;
+                transform: translateX(-50%) scale(0);
+                transition: transform 0.2s ease;
+            }
+        }
+            p:hover{
+                color: #3DCFB6;
+                  &::after{
+                    transform: translateX(-50%) scale(1);
+                }
+            }
+              
        
     }
 }
