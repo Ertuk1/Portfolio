@@ -6,7 +6,7 @@ body {
   position: relative;
   background: #0a0a0a;
   overflow: hidden;
-  cursor: url('/assets/Body/arrow_selector_tool.png')12 12, auto;
+  cursor: url('/assets/Body/arrow_selector_tool.svg')12 12, auto;
   user-select: none;
 }
 
@@ -33,31 +33,31 @@ body:hover::before {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('/fonts/fira-code/static/FiraCode-Regular.ttf') format('truetype');
+  src: url('/Fonts/Fira_code/static/FiraCode-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('/fonts/fira-code/static/FiraCode-Medium.ttf') format('truetype');
+  src: url('/Fonts/Fira_code/static/FiraCode-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('/fonts/fira-code/static/FiraCode-Bold.ttf') format('truetype');
+  src: url('/Fonts/Fira_code/static/FiraCode-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Karla';
-  src: url('/fonts/karla/static/Karla-Regular.ttf') format('truetype');
+  src: url('/Fonts/Karla/Karla/static/Karla-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Karla';
-  src: url('/fonts/karla/static/Karla-Bold.ttf') format('truetype');
+  src: url('/Fonts/Karla/static/Karla-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
@@ -69,12 +69,12 @@ body:hover::before {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('/fonts/fira-code/static/FiraCode-Medium.ttf') format('truetype');
+  src: url('/Fonts/Fira_code/static/FiraCode-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('/fonts/fira-code/static/FiraCode-Bold.ttf') format('truetype');
+  src: url('/Fonts/Fira_code/static/FiraCode-Bold.ttf') format('truetype');
   font-weight: 700;
 }
