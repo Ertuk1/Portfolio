@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { HeroComponent } from '../sections/hero/hero';
+import { AboutComponent } from '../sections/about/about';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent,HeroComponent],
+  imports: [NavbarComponent,HeroComponent,AboutComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })

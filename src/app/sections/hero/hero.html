@@ -1,83 +1,137 @@
-
-<div class="hero" >
+<section class="hero">
     <div class="layer">
         <div class="title">
-        <h1>Fullstack Developer</h1>
-        <h2>Ertugrul Kurtulmus</h2>
+            <h1>Fullstack Developer</h1>
+            <h2>Ertugrul Kurtulmus</h2>
         </div>
-            <div class="button-group">
+        <div class="button-group">
             <button class="button" (click)="scrollToAnchor()">Check my work</button>
             <button class="button" (click)="scrollToAnchor()">Contact me</button>
-            </div>
-            <div class="hero-left">
+        </div>
+        <div class="hero-left">
             <div class="scroll-wrapper">
-            <img src="/assets/Hero/Rectangle 38.svg" class="scroll-border" alt="">
-            <img style="width: 12px; height: 12px;" src="/assets/Hero/Vector 8.svg" class="scroll-inner" alt="">
+                <img src="/assets/Hero/Rectangle 38.svg" class="scroll-border" alt="">
+                <img style="width: 12px; height: 12px;" src="/assets/Hero/Vector 8.svg" class="scroll-inner" alt="">
             </div>
             <img src="/assets/Hero/Vector 1.svg" class="hero-vector" alt="">
-            </div>
-            <div class="wippe-wrapper">
+        </div>
+        <div class="wippe-wrapper">
             <div class="wippe-bar">
                 <div class="marquee">
-                <div class="marquee-track">
-                    
-            <div class="marquee-content">
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Available for remote work</span>
-                </div>   
+                    <div class="marquee-track" #track
+                        [ngStyle]="{ animationDuration: animationDuration + 's','--scroll-distance': animationDistance }">
 
-                
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Fullstack Developer</span>
-                    
-                </div>
 
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Based in Cologne/Bonn</span>
-                    
-                </div>
+                        <div class="marquee-content" #content>
+                            <div class="marquee-item">
 
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Open to work</span>
-                    
-                </div>
-                <!--- Kopie 2. track-->
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Available for remote work</span>
-                </div>   
+                                <span class="marquee-text">Available for remote work</span>
+                            </div>
 
-                
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Fullstack Developer</span>
-                    
-                </div>
 
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Based in Cologne/Bonn</span>
-                    
-                </div>
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Fullstack Developer</span>
 
-                <div class="marquee-item">
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                    <span class="marquee-text">Open to work</span>
-                    <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
-                </div>
-            </div>   
+                            </div>
 
-                </div>
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Based in Cologne/Bonn</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Open to work</span>
+
+                            </div>
+                        </div>
+                        <div class="marquee-content">
+                            <!--- Kopie 2. track-->
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Available for remote work</span>
+                            </div>
+
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Fullstack Developer</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Based in Cologne/Bonn</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Open to work</span>
+
+                            </div>
+                        </div>
+                        <div class="marquee-content">
+                            <!--- Kopie 3. track-->
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Available for remote work</span>
+                            </div>
+
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Fullstack Developer</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Based in Cologne/Bonn</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Open to work</span>
+
+                            </div>
+                        </div>
+                        <div class="marquee-content">
+                            <!--- Kopie 3. track-->
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Available for remote work</span>
+                            </div>
+
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Fullstack Developer</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Based in Cologne/Bonn</span>
+
+                            </div>
+
+                            <div class="marquee-item">
+                                <img src="/assets/Hero/radio_button_unchecked.png" class="radio" alt="Radio_button">
+                                <span class="marquee-text">Open to work</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
     </div>
 
-</div>
-
-    
-
+</section>
