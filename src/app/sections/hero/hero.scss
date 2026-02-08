@@ -100,6 +100,7 @@ padding-top: 168px;
   transform-origin: center;
   margin-left: -5vw; 
   border-radius: 12px;
+  margin-bottom: 40px;
   
 }
 
@@ -164,7 +165,7 @@ padding-top: 168px;
   padding-left: 96px;
   height: 100%; 
   pointer-events: none;
-  bottom: 85px;
+  top:185px;
   display: flex;
   align-self: flex-start;
 }
@@ -202,4 +203,92 @@ padding-top: 168px;
   0%   { transform: translateY(0); }
   50%  { transform: translateY(8px); }
   100% { transform: translateY(0); }
+}
+
+
+/* Container rechts */
+.portfolio-deco-right {
+  position: relative;
+  padding-right: 96px;
+  height: 100%;
+  pointer-events: none;
+  top:159px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.vector-wrapper-right {
+  position: relative;
+  width: 120px;
+  height: 240px;
+  pointer-events: auto;
+}
+
+/* Hintergrund-Vector */
+.vector-bg-right {
+  position: absolute;
+  top: 0;          /* WICHTIG */
+  left: 0;         /* WICHTIG */
+  width: 100%;     /* WICHTIG */
+  height: 100%;    /* WICHTIG */
+  object-fit: contain;
+  z-index: 1;      /* Hinter den Icons */
+}
+
+/* Icons */
+.image-block-right {
+  position: absolute; 
+  z-index: 5;
+  top: 0; /* Startpunkt oben links im Wrapper */
+  left: 0;
+  width: 32px;  /* Gleiche Breite wie die Bilder */
+  height: 76px; /* Gleiche Höhe wie die Bilder */
+  pointer-events: auto; /* Wichtig für Hover */
+}
+
+/* Individuelle Positionierung der Icons auf dem Vector */
+.image-block-right:nth-of-type(1) {
+  top: -50%;  /* Schiebe GitHub weiter hoch */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-block-right:nth-of-type(2) {
+  top: -30%;  /* Schiebe LinkedIn weiter runter */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Die Bilder innerhalb der Blöcke müssen den Block füllen */
+.image-right.default,
+.image-right.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity .3s ease;
+}
+
+.image-right.default { opacity: 1; }
+.image-right.hover { opacity: 0; }
+
+/* Hover Effekt */
+.image-block-right:hover .default { opacity: 0; }
+.image-block-right:hover .hover { opacity: 1; }
+
+.mail-horizontal-right {
+  position: absolute;
+  top: -50%;
+  //left: 100%; /* Positioniert sie rechts neben den Vektor */
+  transform: translateY(-50%) rotate(-90deg); /* Zentriert sie und dreht sie */
+  transform-origin: left center; /* Drehungspunkt festlegen */
+  white-space: nowrap; /* Verhindert Zeilenumbruch */
+  color: #fff; /* Deine gewünschte Farbe */
+  text-decoration: none;
+  font-family: inherit;
+  z-index: 10;
+  pointer-events: auto; /* Klickbar machen */
+  letter-spacing: 0.1em;
 }
