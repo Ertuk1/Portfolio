@@ -1,5 +1,4 @@
 :host {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,6 +40,7 @@ padding-right: 96px;
   height: clamp(120px, 10vw, 200px);
   display: flex;
   justify-self: flex-end;
+  margin-right: 50px;
 }
 
     .menu-left{

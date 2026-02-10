@@ -27,6 +27,15 @@ body::before {
 body:hover::before {
   opacity: 1;
 }
+.hero-wrapper {
+width: 100%;
+min-height: 100vh;
+background-image: url('/assets/Hero/HeroBackground.png');
+background-size: cover;
+background-position: center;
+position: relative;
+  
+}
 
 
 
