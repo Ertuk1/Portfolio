@@ -1,20 +1,4 @@
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('/assets/Hero/HeroBackground.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 0;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  
-}
+
 
 .layer {
   display: flex;
@@ -34,7 +18,6 @@ padding-top: 168px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 755px;
   gap: 12px;
   h1{
     font-family: 'Fira code' monospace;
@@ -175,7 +158,7 @@ padding-top: 168px;
   transform: translateX(-50%);
   z-index: 1;
   width: 1px;
-  height: 240px;
+  height: 220px;
 }
 
 
@@ -283,7 +266,7 @@ padding-top: 168px;
 .mail-horizontal-right {
   position: absolute;
   top: -50%;
-  //left: 100%; /* Positioniert sie rechts neben den Vektor */
+  left: 50%; 
   transform: translateY(-50%) rotate(-90deg); /* Zentriert sie und dreht sie */
   transform-origin: left center; /* Drehungspunkt festlegen */
   white-space: nowrap; /* Verhindert Zeilenumbruch */
